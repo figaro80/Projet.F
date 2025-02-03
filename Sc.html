@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+    body{
+    background: linear-gradient(rgb(241, 239, 239),rgb(179, 179, 179));
+    color: #ededed;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    display: flex; 
+}
+
+    .header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    padding: 10px 50px;
+    background: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(97, 97, 97, 0.2);
+    z-index: 999;
+    justify-content: space-between;  
+    align-items: center;  
+} 
+
+    .navigation a:checked{
+    color: #22222d;
+}
+
+/** les boutons du header */
+.navigation a{
+
+    color: #22222d;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: 0.7s ease;
+}
+
+.navigation a:hover{
+    
+    transition: 410ms ;
+    border-bottom: solid 2px #22222d;
+    font-weight:500;
+}
+
+.navigation .H{
+    color:#22222d;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+/** Pour le logo V. */
+.logo{
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #22222d;
+    font-size: 25px;
+    filter: drop-shadow(3px 3px 3px black);
+    padding-left: 20px;
+}
+
+.sc{
+    width: 70%;
+    height: 50%;
+    border: #22222d solid 1px;
+    border-radius: 10px;
+    align-self: center;
+    background: rgba(27, 23, 23, 0.1);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+}
+
+.div1,.div2,.div3{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #ededed;
+    border-radius: 50%;
+    transition: 0.4s;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.5);
+    
+    
+}
+
+
+.div1:hover {
+    transform: scale(1.2, 1.2)
+                translateX(-13px)
+                translateY(-5px);
+    background-color: #ededed;
+    border-radius: 7px;
+    width: 250px;
+    height: 234px;
+}
+.div2:hover {
+    transform: scale(1.2, 1.2)
+               translateY(-5px) ;
+    background-color: #ededed;
+    border-radius: 7px;
+    width: 250px;
+    height: 234px;
+}
+
+.div3:hover {
+    transform: scale(1.2, 1.2)
+                translateX(13px)
+                translateY(-5px);
+    background-color: #ededed;
+    border-radius: 7px;
+    width: 250px;
+    height: 234px;
+}
+
+.backdiv{
+    transition: 0.5s;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.backdiv:hover > .div:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);  
+}
+
+h4,h6{
+    color: #22222d;
+    margin-top: 15px;
+}
+.link{
+    background: rgb(109, 178, 228);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: auto;
+    top: 30px;
+    transition: 0.4s ease;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.link:hover{
+    width: 120px;
+    border-radius: 10px;
+
+}
+.valid{
+    color: rgb(109, 178, 228);
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    margin: auto;
+    padding: 10px;
+
+    
+}
+
+.link:hover .valid{
+    color: #22222d;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="#logo">V.</a>
+        
+        <nav class="navigation">
+            <a class="H" href="index.html">Home</a>
+            <a href="#Services">Services</a>
+            <a href="#About">About</a>
+            <a href="#Contact">contact</a>
+        </nav>
+
+        
+    </header>
+
+    <nav class="sc">
+       <div class="backdiv">
+        <div class="div1">
+            
+            <h4> Web Page</h4>
+            <h6>I specialize in developing custom, responsive websites designed to meet the specific 
+                needs of your business, ensuring an optimal user experience.</h6>
+                <div class="link"><a class="valid" href="C:\Users\user\Documents\Projet\formulaire.html">VALIDER</a></div>
+         </div>
+         <div class="div2">
+            
+            <h4>Unit Test</h4>
+            <h6>I offer comprehensive unit testing services to ensure the reliability and functionality of each
+                 component of your website or application.</h6>
+                 <div class="link"><a class="valid" href="C:\Users\user\Documents\Projet\formulaire.html">VALIDER</a></div>
+         </div>
+         <div class="div3">
+            <h4>Database integration</h4>
+            <h6>I provide seamless integration of secure and efficient database systems, optimizing data management and 
+                enhancing the functionality of your website.</h6>
+                <div class="link"><a class="valid" href="C:\Users\user\Documents\Projet\formulaire.html">VALIDER</a></div>
+         </div>
+         
+         </div>
+       </div> 
+        
+    </nav>
+</body>
+</html>

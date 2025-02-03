@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(rgb(241, 239, 239),rgb(179, 179, 179));
+    color: #ededed;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    display: flex; 
+
+}
+
+.header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    padding: 10px 50px;
+    background: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(97, 97, 97, 0.2);
+    z-index: 999;
+    justify-content: space-between;  
+    align-items: center;  
+} 
+
+    .navigation a:checked{
+    color: #22222d;
+}
+
+/** les boutons du header */
+.navigation a{
+
+    color: #22222d;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: 0.7s ease;
+}
+
+.navigation a:hover{
+    
+    transition: 410ms ;
+    border-bottom: solid 2px #22222d;
+    font-weight:500;
+}
+
+.navigation .H{
+    color:#22222d;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+/** Pour le logo V. */
+.logo{
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #22222d;
+    font-size: 25px;
+    filter: drop-shadow(3px 3px 3px black);
+    padding-left: 20px;
+}
+
+.nav{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 70px;
+    justify-content: space-around;
+}
+
+.div{
+    background-color: darkslategray ;
+    width: 350px;
+    height: 50px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.div:hover p{
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+.contact2{
+    width: max-content;
+    height: 25px;
+
+}
+
+.contact2 a{
+    text-decoration: none;
+    position: absolute;
+    right: 300px;
+    margin-top: 5px;
+    color: #22222d;
+}
+
+.contact2 a::after{
+    content: '';
+    width: 0;
+    position: absolute;
+    background: linear-gradient(to right, blue, purple);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 100px;
+    transition: 0.3s ease;
+}
+
+.contact2 a:hover::after{
+    width: 100%;
+}
+
+.nav2{
+    top: 170px;
+    width: 1000px;
+    height: 20px;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.div2{
+    background-color: #22222d;
+    width: 220px;
+    height: 35px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.p::after{
+    content: '10.C per/M';
+    position: absolute;
+    left: 205px;
+    color: transparent;
+    transition: 0.4s;
+}
+
+
+
+#crs:hover{
+    width: 320px;
+}
+
+.div2:hover .p::after{
+    color: rgb(171, 113, 171);
+}
+
+.nav3{
+    top: 240px;
+    width: 1000px;
+    height: 20px;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.div3{
+    background-color: #22222d;
+    width: 220px;
+    height: 35px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+.div3 .p::after{
+    content: '15.C per/M';
+    position: absolute;
+    left: 205px;
+}
+
+.div3:hover .p::after{
+    color: rgb(171, 113, 171);
+}
+
+.contact3{
+    width: max-content;
+    height: 25px;
+
+}
+
+.contact3 a{
+    text-decoration: none;
+    position: absolute;
+    right: 300px;
+    margin-top: 5px;
+    color: #22222d;
+}
+
+.contact3 a::after{
+    content: '';
+    width: 0;
+    position: absolute;
+    background: linear-gradient(to right, blue, purple);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 100px;
+    transition: 0.3s ease;
+}
+
+.contact3 a:hover::after{
+    width: 100%;
+}
+
+.nav4{
+    top: 310px;
+    width: 1000px;
+    height: 20px;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.div4{
+    background-color: #22222d;
+    width: 220px;
+    height: 35px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+.div4 .p::after{
+    content: '15.C per/M';
+    position: absolute;
+    left: 205px;
+}
+
+.div4:hover .p::after{
+    color: rgb(171, 113, 171);
+}
+
+.contact4{
+    width: max-content;
+    height: 25px;
+
+}
+
+.contact4 a{
+    text-decoration: none;
+    position: absolute;
+    right: 300px;
+    margin-top: 5px;
+    color: #22222d;
+}
+
+.contact4 a::after{
+    content: '';
+    width: 0;
+    position: absolute;
+    background: linear-gradient(to right, blue, purple);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 100px;
+    transition: 0.3s ease;
+}
+
+.contact4 a:hover::after{
+    width: 100%;
+}
+
+.nav5{
+    top: 380px;
+    width: 1000px;
+    height: 20px;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.div5{
+    background-color: #22222d;
+    width: 220px;
+    height: 35px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+.div5 .p::after{
+    content: '5.C per/M';
+    position: absolute;
+    left: 205px;
+    
+}
+
+.div5:hover .p::after{
+    color: rgb(171, 113, 171);
+}
+
+
+.contact5{
+    width: max-content;
+    height: 25px;
+
+}
+
+.contact5 a{
+    text-decoration: none;
+    position: absolute;
+    right: 300px;
+    margin-top: 5px;
+    color: #22222d;
+}
+
+.contact5 a::after{
+    content: '';
+    width: 0;
+    position: absolute;
+    background: linear-gradient(to right, blue, purple);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 100px;
+    transition: 0.3s ease;
+}
+
+.contact5 a:hover::after{
+    width: 100%;
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="#logo">V.</a>
+
+        <nav class="navigation">
+            <a class="H" href="index.html">Home</a>
+            
+            <a href="#Services">Services</a>
+            <a href="#About">About</a>
+            <a href="#Contact">contact</a>
+        </nav>
+        
+    </header>
+
+    <nav class="nav">
+                <div class="div"><p>Courses</p></div>
+                <div class="div"><p>Price</p></div>
+        <nav class="nav2">
+                <div class="div2" id="crs"><p class="p">Python</p></div>
+                <div class="contact2"><p><a href="C:\Users\user\Documents\Projet\formulaire.html">Contact</a></p></div>
+                <div class="div2" ><p >70$</p></div>
+        </nav>
+
+        <nav class="nav3">
+            <div class="div3" id="crs"><p class="p">JS</p></div>
+            <div class="contact3"><p><a href="C:\Users\user\Documents\Projet\formulaire.html">Contact</a></p></div>
+            <div class="div3"><p >90$</p></div>
+        </nav>
+
+        <nav class="nav4">
+            <div class="div4" id="crs"><p class="p">DB</p></div>
+            <div class="contact4"><p><a href="C:\Users\user\Documents\Projet\formulaire.html">Contact</a></p></div>
+            <div class="div4"><p >80$</p></div>
+        </nav>
+
+        <nav class="nav5">
+            <div class="div5" id="crs"><p class="p">PHP</p></div>
+            <div class="contact5"><p><a href="C:\Users\user\Documents\Projet\formulaire.html">Contact</a></p></div>
+            <div class="div5"><p >60$</p></div>
+        </nav>
+    </nav>
+    
+       
+</body>
+</html>
